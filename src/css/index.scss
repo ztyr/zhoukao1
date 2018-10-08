@@ -1,0 +1,116 @@
+@import "common.scss";
+@import "_minix.scss";
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+    @include sizing;
+    border: pxTorem(10px) solid blue;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: pxTorem(50px);
+    @include box_flex;
+    @include justify(flex-start);
+    @include align;
+    dl {
+        width: 100%;
+        height: 100%;
+        @include box_flex;
+        @include justify;
+        @include align;
+        dt {
+            width: pxTorem(45px);
+            height: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        dd {
+            width: 100%;
+            height: 100%;
+            @include box_flex;
+            @include direction(column);
+            h1 {
+                font-size: pxTorem(18px);
+            }
+            p {
+                font-size: pxTorem(14px);
+            }
+        }
+    }
+}
+
+main {
+    width: 100%;
+    @include flex;
+    @include box_flex;
+    @include direction(column);
+    .select {
+        width: 100%;
+        height: pxTorem(100px);
+        @include box_flex;
+        @include direction(column);
+        @include sizing;
+        padding: pxTorem(5px) pxTorem(10px);
+        border: pxTorem(3px) solid #ccc;
+        .s_head {
+            width: 100%;
+            height: pxTorem(40px);
+            @include box_flex;
+            @include justify(space-between);
+            @include align;
+            h3 {
+                @include flex;
+                height: 100%;
+                @include box_flex;
+                font-size: pxTorem(16px);
+                input {
+                    width: pxTorem(30px);
+                    height: pxTorem(30px);
+                }
+            }
+            b {
+                width: pxTorem(40px);
+                color: red;
+                font-size: pxTorem(14px);
+            }
+        }
+        .s_con {
+            width: 100%;
+            @include flex;
+            ul {
+                width: 100%;
+                height: 100%;
+                @include box_flex;
+                @include flexWrap(wrap);
+                li {
+                    @include flex_basis(50%);
+                    height: pxTorem(30px);
+                    font-size: pxTorem(14px);
+                    span {
+                        color: #aaa;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.active {
+    border: pxTorem(3px) solid red!important;
+}

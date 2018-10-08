@@ -1,0 +1,32 @@
+{
+    "code": 1,
+    "message": "success",
+    "data": [{
+        "name": "MySQL",
+        "time": "60天",
+        "content": [{
+            "cpu": "2核",
+            "memory": "4GB",
+            "system": "40G",
+            "wsx": "100G"
+        }]
+    }, {
+        "name": "MySQL",
+        "time": "30天",
+        "content": [{
+            "cpu": "2核",
+            "memory": "4GB",
+            "system": "40G",
+            "wsx": "100G"
+        }]
+    }, {
+        "name": "MySQL",
+        "time": "60天",
+        "content": [{
+            "cpu": "2核",
+            "memory": "8GB",
+            "system": "40G",
+            "wsx": "100G"
+        }]
+    }]
+}
