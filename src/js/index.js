@@ -30,7 +30,11 @@ $(function() {
         $('main').append(lhtml);
         $("main").on("click", "#select", function() {
             $(this).addClass('active').siblings().removeClass("active");
-        })
+            var name = $(this).find('.s_head span').text();
+            var timer = $(this).find('.s_head b').text();
+            $('footer').find('.name').html(name);
+            $('footer').find('.timer').html(timer);
+        });
     }
 
 });
