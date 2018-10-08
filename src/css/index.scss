@@ -60,7 +60,7 @@ main {
     @include flex;
     @include box_flex;
     @include direction(column);
-    .select {
+    #select {
         width: 100%;
         height: pxTorem(100px);
         @include box_flex;
@@ -68,20 +68,22 @@ main {
         @include sizing;
         padding: pxTorem(5px) pxTorem(10px);
         border: pxTorem(3px) solid #ccc;
+        margin-bottom: pxTorem(20px);
         .s_head {
             width: 100%;
             height: pxTorem(40px);
             @include box_flex;
             @include justify(space-between);
             @include align;
+            border-bottom: 1px solid #ccc;
             h3 {
                 @include flex;
                 height: 100%;
                 @include box_flex;
                 font-size: pxTorem(16px);
                 input {
-                    width: pxTorem(30px);
-                    height: pxTorem(30px);
+                    width: pxTorem(15px);
+                    height: pxTorem(15px);
                 }
             }
             b {
@@ -113,4 +115,37 @@ main {
 
 .active {
     border: pxTorem(3px) solid red!important;
+}
+
+footer {
+    width: 100%;
+    height: pxTorem(100px);
+    @include box_flex;
+    @include justify(space-between);
+    @include align;
+    @include sizing;
+    padding: 0 pxTorem(10px);
+    span {
+        @include flex_basis(50%);
+        height: 100%;
+        p {
+            height: pxTorem(30px);
+            line-height: pxTorem(30px);
+            font-size: pxTorem(15px);
+            b {
+                color: red;
+                font-weight: normal;
+            }
+            .last {
+                color: #ccc;
+            }
+        }
+    }
+    button {
+        background: red;
+        color: white;
+        border: 0;
+        padding: pxTorem(5px);
+        font-size: pxTorem(14px);
+    }
 }

@@ -10,26 +10,27 @@ $(function() {
 
     function render(data) {
         var lhtml = '';
-        var html = '';
-        data.forEach(function(item) {
-            lhtml += `<div class="select">
+        data.forEach(function(item, ind) {
+            lhtml += `<div id="select">
             <div class="s_head">
                 <h3><input type="radio" name="" id="btn"><span>${item.name}</span></h3>
                 <b>${item.time}</b>
             </div>
             <div class="s_con">
-                <ul>        
+                <ul>
+                    <li>${item.cpu}<span>CPU</span></li>
+                    <li>${item.memory}<span>内存</span></li>
+                    <li>${item.system}<span>系统盘</span></li>
+                    <li>${item.wsx}<span>数据盘</span></li>
+                </ul>
+            </div>
+        </div>       
                 `;
-            lhtml += `</ul>
-                </div>
-            </div>`;
         });
-
-        // data.content.forEach(function(val) {
-        //     html += `<li>${val}<span>CPU</span></li>`;
-        // });
-
-        $('.main').append(lhtml);
-        $('.s_con>ul').append(html);
+        $('main').append(lhtml);
+        $("main").on("click", "#select", function() {
+            $(this).addClass('active').siblings().removeClass("active");
+        })
     }
+
 });

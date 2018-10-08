@@ -4,29 +4,34 @@
     "data": [{
         "name": "MySQL",
         "time": "60天",
-        "content": [{
-            "cpu": "2核",
-            "memory": "4GB",
-            "system": "40G",
-            "wsx": "100G"
-        }]
+        "cpu": "2核",
+        "memory": "4GB",
+        "system": "40G",
+        "wsx": "100G"
+
     }, {
-        "name": "MySQL",
+        "name": "PostgreSQL",
         "time": "30天",
-        "content": [{
-            "cpu": "2核",
-            "memory": "4GB",
-            "system": "40G",
-            "wsx": "100G"
-        }]
+        "cpu": "2核",
+        "memory": "4GB",
+        "system": "40G",
+        "wsx": "100G"
+
     }, {
-        "name": "MySQL",
+        "name": "SQL Sever",
         "time": "60天",
-        "content": [{
-            "cpu": "2核",
-            "memory": "8GB",
-            "system": "40G",
-            "wsx": "100G"
-        }]
+        "cpu": "2核",
+        "memory": "8GB",
+        "system": "40G",
+        "wsx": "100G"
+
+    }, {
+        "name": "MongoDB",
+        "time": "30天",
+        "cpu": "2核",
+        "memory": "8GB",
+        "system": "40G",
+        "wsx": "100G"
+
     }]
 }
